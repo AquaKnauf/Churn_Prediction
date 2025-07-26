@@ -2,6 +2,8 @@ from fastapi import FastAPI, HTTPException
 import joblib
 import pandas as pd
 import json
+import requests
+import os
 
 app = FastAPI()
 MODEL_URL = "https://huggingface.co/AquaKnauf/FastAPI_Churn_Prediction/resolve/main/model.pkl"
