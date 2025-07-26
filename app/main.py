@@ -4,9 +4,20 @@ import pandas as pd
 import json
 
 app = FastAPI()
+MODEL_URL = "https://huggingface.co/AquaKnauf/FastAPI_Churn_Prediction/resolve/main/model.pkl"
+MODEL_PATH = "model.pkl"
 
+def download_model():
+    if not os.path.exists(MODEL_PATH):
+        r = requests.get(MODEL_URL)
+        with open(MODEL_PATH, "wb") as f:
+            f.write(r.content)
+
+download_model()
 # Load model and feature names
-model = joblib.load("models/model.pkl")
+model = joblib.load(MODEL_PATH)
+
+
 with open("models/feature_names.json") as f:
     expected_columns = json.load(f)
 
