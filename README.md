@@ -3,17 +3,19 @@
 An end-to-end machine learning project for predicting customer churn using a Random Forest classifier, FastAPI for serving predictions, MLflow for tracking experiments, and Streamlit for interactive exploration.
 
 ## 🚀 Live Demo & API
-	•	📊 Streamlit UI: Hugging Face Spaces [View the live Streamlit app](https://huggingface.co/spaces/AquaKnauf/StreamlitApp)
-	•	🔌 REST API: Hosted on Render 
+
+- 📊 **Streamlit UI**: [View the live app on Hugging Face Spaces](https://huggingface.co/spaces/AquaKnauf/StreamlitApp)  
+- 🔌 **REST API**: Hosted on Render 
 
 
 ## 📦 Features
-	•	🔍 Preprocessing: Categorical encoding, numeric conversion, null handling
-	•	🌲 Modeling: RandomForestClassifier with MLflow logging
-	•	🌐 API: FastAPI endpoint serving real-time predictions
-	•	🎛 Streamlit App: User-friendly frontend for testing predictions
-	•	📦 Dockerized: Reproducible deployments via Docker
-	•	🔁 ML Lifecycle: Uses mlflow to log metrics, parameters, and model versions
+
+- 🔍 **Preprocessing**: Categorical encoding, numeric conversion, null handling
+- 🌲 **Modeling**: RandomForestClassifier with MLflow logging
+- 🌐 **API**: FastAPI endpoint serving real-time predictions
+- 🎛 **Streamlit App**: User-friendly frontend for testing predictions
+- 📦 **Dockerized**: Reproducible deployments via Docker
+- 🔁 **ML Lifecycle**: Uses mlflow to log metrics, parameters, and model versions
 
 
 ## 🧪 Quick Start
