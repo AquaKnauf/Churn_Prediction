@@ -105,8 +105,8 @@ Churn_Prediction/
 ├── data/
 │   └── raw/telco_churn.csv    # Source dataset
 ├── src/
-│   └──preprocess.py              # Data transformation
-│   ├── train.py                  # Model training + MLflow logging
+│   ├──preprocess.py              # Data transformation
+│   └──train.py                  # Model training + MLflow logging
 ├── requirements.txt
 └── Dockerfile
 ```
