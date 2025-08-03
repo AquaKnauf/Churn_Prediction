@@ -104,9 +104,9 @@ Churn_Prediction/
 │   └── feature_names.json     # Feature list
 ├── data/
 │   └── raw/telco_churn.csv    # Source dataset
-├── preprocess.py              # Data transformation
-├── train.py                   # Model training + MLflow logging
-├── streamlit_app.py           # Streamlit UI
+├── src/
+│   └──preprocess.py              # Data transformation
+│   ├── train.py                  # Model training + MLflow logging
 ├── requirements.txt
 └── Dockerfile
 ```
