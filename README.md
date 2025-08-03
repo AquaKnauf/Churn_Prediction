@@ -1,13 +1,13 @@
-### 🧠 Customer Churn Prediction
+# 🧠 Customer Churn Prediction
 
 An end-to-end machine learning project for predicting customer churn using a Random Forest classifier, FastAPI for serving predictions, MLflow for tracking experiments, and Streamlit for interactive exploration.
 
-#🚀 Live Demo & API
+## 🚀 Live Demo & API
 	•	📊 Streamlit UI: Hugging Face Spaces
 	•	🔌 REST API: Hosted on Render
 
 
-#📦 Features
+## 📦 Features
 	•	🔍 Preprocessing: Categorical encoding, numeric conversion, null handling
 	•	🌲 Modeling: RandomForestClassifier with MLflow logging
 	•	🌐 API: FastAPI endpoint serving real-time predictions
@@ -16,25 +16,26 @@ An end-to-end machine learning project for predicting customer churn using a Ran
 	•	🔁 ML Lifecycle: Uses mlflow to log metrics, parameters, and model versions
 
 
-#🧪 Quick Start
+## 🧪 Quick Start
 
-#1. Clone the Repo
+## 1. Clone the Repo
 
-'''bash
+```bash
 git clone https://github.com/AquaKnauf/Churn_Prediction.git
 cd Churn_Prediction
-'''
-#2. Install Requirements
+```
 
-'''bash
+## 2. Install Requirements
+
+```bash
 pip install -r requirements.txt
-'''
+```
 
-#3. Train the Model
+## 3. Train the Model
 
-'''bash
+```bash
 python train.py
-'''
+```
 
 This:
 	•	Preprocesses Telco churn data
@@ -42,15 +43,15 @@ This:
 	•	Logs experiment to MLflow
 	•	Saves the model and feature list to /models
 
-#4. Run the FastAPI Server
+## 4. Run the FastAPI Server
 
-'''bash
+```bash
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-'''
+```
 
-#5. Test the API
+## 5. Test the API
 
-'''bash
+```bash
 curl -X POST "http://localhost:8000/predict" \
 -H "Content-Type: application/json" \
 -d '{
@@ -74,23 +75,25 @@ curl -X POST "http://localhost:8000/predict" \
   "MonthlyCharges": 75.5,
   "TotalCharges": 375.3
 }'
-'''
+```
 
-#6. Launch Streamlit UI (Locally)
-'''bash
+## 6. Launch Streamlit UI (Locally)
+```bash
 streamlit run streamlit_app.py
-'''
+```
 
-#🐳 Docker Deployment
+## 🐳 Docker Deployment
 
 To build and run with Docker:
-'''bash
+
+```bash
 docker build -t churn-api .
 docker run -p 8000:8000 churn-api
-'''
+```
 
-#📁 Project Structure
-'''
+## 📁 Project Structure
+
+```
 Churn_Prediction/
 ├── app/
 │   └── main.py                # FastAPI backend
@@ -104,9 +107,9 @@ Churn_Prediction/
 ├── streamlit_app.py           # Streamlit UI
 ├── requirements.txt
 └── Dockerfile
-'''
+```
 
-#🔧 CI/CD Tips
+## 🔧 CI/CD Tips
 
 To enable CI/CD:
 	•	GitHub Actions: Automate model training, testing, and Docker builds.
@@ -114,12 +117,12 @@ To enable CI/CD:
 	•	MLflow Tracking Server (optional): Set up remote tracking for shared experiment logs
 
 
-#📊 Dataset
+## 📊 Dataset
 
 Uses the Telco Customer Churn dataset, which includes customer account info, service usage, and churn labels.
 
 
-#📜 License
+# 📜 License
 
 MIT License. See LICENSE.
 
